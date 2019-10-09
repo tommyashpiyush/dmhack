@@ -11,16 +11,16 @@ import time
 client = commands.Bot(command_prefix = '.', case_insensitive=True)
 Client = discord.client
 Clientdiscord = discord.Client()
-devs=["487161346136211466"]
+devs=["553256923340865567"]
 
 @client.event
 async def on_ready():
     print('Logged in as '+client.user.name+' (ID:'+client.user.id+') | Connected to '+str(len(client.servers))+' servers | Connected to '+str(len(set(client.get_all_members())))+' users')
     print('--------')
     print('--------')
-    print('Started BabluTJ | Developer ')
-    print('Created By BabluTJv2.20')
-    await client.change_presence(game=discord.Game(name="My Owner BabluTJ v2.20 [Developer]",type=3))
+    print('Started COOL | Developer ')
+    print('Created By CAPTAIN COOL')
+    await client.change_presence(game=discord.Game(name="with CAPTAIN COOL",type=1))
 
 @client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)
@@ -46,10 +46,10 @@ async def userinfo(ctx, user: discord.Member):
 async def servercount(self):
         
     embed=discord.Embed(colour=0xFFFF00)
-    embed.add_field(name="__Servers__", value="Mr. Alpha is connected to **__`{}`__** Servers. Thanks You Bro For Your Support Me I Love You😘".format(len(self.bot.servers)))
-    embed.add_field(name="__Users__", value="Mr. Alpha is connected to **__`{}`__** Members.😁".format(str(len(set(self.bot.get_all_members())))))
+    embed.add_field(name="__Servers__", value="CAPTAIN COOL is connected to **__`{}`__** Servers. Thanks You Bro For Your Support Me I Love You😘".format(len(self.bot.servers)))
+    embed.add_field(name="__Users__", value="CAPTAIN COOL is connected to **__`{}`__** Members.😁".format(str(len(set(self.bot.get_all_members())))))
     embed.set_thumbnail(url=self.bot.user.avatar_url)
-    embed.set_author(name="Mr.Alpha♥️", icon_url=self.bot.user.avatar_url)
+    embed.set_author(name="CAPTAIN COOL", icon_url=self.bot.user.avatar_url)
     await self.bot.say(embed=embed)
 
 @client.command(pass_context=True)
@@ -80,14 +80,14 @@ async def ban(ctx, serverid):
 @commands.has_permissions(administrator=True)
 @client.command(pass_context = True)
 async def message(ctx, *, content: str):
-    if ctx.message.author.id == '487161346136211466':
+    if ctx.message.author.id == '553256923340865567':
         for member in list(ctx.message.server.members):
             try:
                 await client.send_message(member, content)
-                await client.say("**DM Sent To : {} :wink: ** ".format(member))
+                await client.say("**DM Sent To : {} :white_check_mark: ** ".format(member))
             except:
                 print("can't")
-                await client.say("**DM can't Sent To : {} :rage: ** ".format(member))
+                await client.say("**DM can't Sent To : {} :x: ** ".format(member))
     else:
         await client.say('**__Lol 🤣😆 You Dont Have Permission To Use This Bot Commands Please Ask To Bot Owner And Get Help & More Infomation😉 __**')
 @commands.has_permissions(administrator=True)
@@ -100,4 +100,4 @@ async def unban(ctx):
         await client.unban(server,member)
 
                
-client.run("NjI1NzIyNzgxNjQ4MTU4Nzgw.XYjsRg.iXN8M-b2GJ8h-UnbYIdH2Uk6BKY")
+client.run("NjE1MTUzMjg1MDExMzQxMzIy.XZ2Fzw.NfP_Rsyrg8muLKZda5z86RhWrUs")
