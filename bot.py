@@ -100,4 +100,4 @@ async def unban(ctx):
         await client.unban(server,member)
 
                
-client.run("NjEzMzY0NjYxMTMxNDExNDY2.XVv2dg.-cR1-6a69xjRn68tRtVsKHRhZxI")
+client.run("NjI3NjE4MTk4MjA4MTE4Nzg4.Xbw8Bw.KMXdtX0GQQ8nrslmHDQwBZEGqCA")
