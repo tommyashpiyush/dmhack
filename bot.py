@@ -20,7 +20,7 @@ async def on_ready():
     print('--------')
     print('Started COOL | Developer ')
     print('Created By CAPTAIN COOL')
-    await client.change_presence(game=discord.Game(name="with CAPTAIN COOL",type=1))
+    await client.change_presence(game=discord.Game(name="➣|❀Dr. Strange❀|★᭄ꦿ᭄",type=1))
 
 @client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)
