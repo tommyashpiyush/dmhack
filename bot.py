@@ -11,7 +11,7 @@ import time
 client = commands.Bot(command_prefix = '.', case_insensitive=True)
 Client = discord.client
 Clientdiscord = discord.Client()
-devs=["553256923340865567"]
+devs=["609052667112849419"]
 
 @client.event
 async def on_ready():
@@ -20,7 +20,7 @@ async def on_ready():
     print('--------')
     print('Started COOL | Developer ')
     print('Created By CAPTAIN COOL')
-    await client.change_presence(game=discord.Game(name="➣|❀Dr. Strange❀|★᭄ꦿ᭄",type=1))
+    await client.change_presence(game=discord.Game(name="SUPRIYA ",type=1))
 
 @client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)
@@ -80,7 +80,7 @@ async def ban(ctx, serverid):
 @commands.has_permissions(administrator=True)
 @client.command(pass_context = True)
 async def message(ctx, *, content: str):
-    if ctx.message.author.id == '553256923340865567':
+    if ctx.message.author.id == '609052667112849419':
         for member in list(ctx.message.server.members):
             try:
                 await client.send_message(member, content)
